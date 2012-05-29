@@ -38,7 +38,7 @@ to deal with the HTTP networking protocol.
 4. Install Zinc:
 
     ```Smalltalk
-    repo := 'Add you repo path here'.
+    repo := '/opt/git/zinc/repository'. "edit to match path to your cloned repository"
     Gofer new
         repository: (MCFileTreeRepository new directory: 
                         (FileDirectory on: repo));

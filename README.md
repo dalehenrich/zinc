@@ -18,4 +18,31 @@ to deal with the HTTP networking protocol.
 
 ## Loading into gemstone
 
-You should first load the SocketStream port from the PharoCompat repository here: http://seaside.gemstone.com/ss/PharoCompat
+1. [Install FileTree](https://github.com/dalehenrich/filetree/blob/master/doc/GemStoneInstall.md)
+2. Install SocketStream:
+
+    ```Smalltalk
+    Gofer new
+      gemsource: 'PharoCompat';
+      package: 'SocketStream';
+      load.
+    ```
+
+3. Clone Zinc repository:
+
+    ```shell
+    cd /opt/git/
+    git clone -b gemstone https://dalehenrich@github.com/glassdb/zinc.git
+    ```
+
+4. Install Zinc:
+
+    ```Smalltalk
+    repo := 'Add you repo path here'.
+    Gofer new
+        repository: (MCFileTreeRepository new directory: 
+                        (FileDirectory on: repo));
+        package: 'Zinc-HTTP';
+        package: 'Zinc-Tests';
+        load.
+    ```

@@ -41,7 +41,7 @@ to deal with the HTTP networking protocol.
     repo := '/opt/git/zinc/repository'. "edit to match path to your cloned repository"
     Gofer new
         repository: (MCFileTreeRepository new directory: 
-                        (FileDirectory on: repo));
+                        (ServerFileDirectory on: repo));
         package: 'Zinc-HTTP';
         package: 'Zinc-Tests';
         load.

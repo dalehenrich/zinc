@@ -16,7 +16,7 @@ to deal with the HTTP networking protocol.
 
 [MIT Licensed](https://github.com/svenvc/zinc/blob/master/license.txt)
 
-## Loading into GemStone 2.4.x
+## Loading into GemStone 2.4.x and 3.1.x
 
 1. [Upgrade to GLASS 1.0-beta.9](http://code.google.com/p/glassdb/wiki/GemToolsUpdate#Update_GLASS)
 2. Install Metacello Preview:
